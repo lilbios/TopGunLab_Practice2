@@ -8,6 +8,7 @@ namespace ConsoleApp
 
     static class Task
     {
+        
         public static int Factorial(int number) => Enumerable.Range(1, number).Aggregate((x, y) => x * y);
 
         public static int Fibonacci(int n) => Enumerable.Range(1, n)
@@ -30,7 +31,7 @@ namespace ConsoleApp
                 {
                     strb.Append($" {number} ");
                 }
-                ++numberOfGroups;
+                 ++numberOfGroups;
                 if (numberOfGroups != 2)
                 {
                     strb.Append("\n");

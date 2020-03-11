@@ -6,14 +6,13 @@ namespace ConsoleApp
 {
     public enum GeograhicPole
     {
-        West,
-        South,
-        East,
-        North,
-        NorthWest,
-        NorthEast,
-        NortEast,
-        SouthWest,
-        SouthEast
+        WEST,
+        SOUTH,
+        EAST,
+        NORTH,
+        NORTH_WEST,
+        NORTH_EAST,
+        SOUTH_WEST,
+        SOUTH_EAST
     }
 }

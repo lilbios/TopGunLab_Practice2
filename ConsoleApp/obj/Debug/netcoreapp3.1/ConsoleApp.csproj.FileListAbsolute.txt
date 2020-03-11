@@ -1,0 +1,11 @@
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.exe
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.deps.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.dev.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.dll
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csprojAssemblyReference.cache
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfoInputs.cache
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfo.cs
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.dll
+D:\TopGunLab\Practices\TopGunLab_Practice2\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.pdb

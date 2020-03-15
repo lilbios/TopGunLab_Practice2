@@ -11,7 +11,7 @@ namespace ConsoleApp
 
         public static IEnumerable<object> GroupByValuta(IEnumerable<Country> countries)
         {
-            var result = countries.GroupBy(v => v.Valuta)
+             return countries.GroupBy(v => v.Valuta)
                 .Select(g => new
                 {
                     Prop = g.Key,
@@ -19,26 +19,54 @@ namespace ConsoleApp
                     Countries = g.Select(c => c.CountryName)
 
                 });
-            return result;
-
+           
         }
 
         public static  IEnumerable<object> GroupByGeographicPole( IEnumerable<Country> countries)
         {
-            return countries.GroupBy(v => v.GeograhicPole).Select(grp => grp.ToList()).ToList();
+
+            return countries.GroupBy(v => v.GeograhicPole).Select(g => new
+            {
+                Prop = g.Key,
+                Count = g.Count(),
+                Countries = g.Select(c => new {
+                    Name = c.CountryName,
+                    Capital = c.Capital,
+                    GPD = random.Next(500_000,1_000_000_000)/c.Population
+                })
+                
+
+            }); 
 
         }
         public static  IEnumerable<object> GroupBySideMove( IEnumerable<Country> countries)
         {
-            return countries.GroupBy(v => v.SideMove).Select(grp => grp.ToList()).ToList();
+            return countries.GroupBy(v => v.SideMove).Select(g => new
+            {
+                Prop = g.Key,
+                Count = g.Count(),
+                Countries = g.Select(c => c.CountryName)
+
+            });
         }
         public static IEnumerable<object> GroupByContinent( IEnumerable<Country> countries)
         {
-            return countries.GroupBy(v => v.Continent).Select(grp => grp.ToList()).ToList();
+            return countries.GroupBy(v => v.Continent).Select(g => new
+            {
+                Prop = g.Key,
+                Count = g.Count(),
+                Countries = g.Select(c => new {
+                    Name = c.CountryName,
+                    Capital = c.Capital,
+                    GPD = random.Next(500_000, 1_000_000_000) / c.Population
+                })
+
+
+            });
         }
         public static  IEnumerable<object> GroupByAllProperty( IEnumerable<Country> countries)
         {
-            return countries.GroupBy(v => new { v.Continent,v.GeograhicPole,v.SideMove,v.Valuta }).Select(grp => grp.ToList()).ToList();
+            return countries.GroupBy(v => new { v.Continent,v.GeograhicPole,v.SideMove,v.Valuta });
         }
     }
 

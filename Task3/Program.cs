@@ -12,13 +12,29 @@ namespace Task3
             dynamic grouped = CountryGrouper.GroupByValuta(countries);
             foreach (var item in grouped)
             {
-                Console.WriteLine($"{item.Prop} {item.Count}");
+                Console.WriteLine($"Sign of sort: {item.Prop}");
+                Console.WriteLine($"Countries: {item.Count}");
                 foreach (var country in item.Countries)
                 {
                     Console.WriteLine(country);
                 }
                 Console.WriteLine();
             }
+            grouped = CountryGrouper.GroupByContinent(countries);
+            foreach (var item in grouped)
+            {
+                Console.WriteLine($"Sign of sort: {item.Prop}");
+                Console.WriteLine($"Countries: {item.Count}");
+                foreach (var country in item.Countries)
+                {
+                    Console.WriteLine($"Сountry:{country.Name}");
+                    Console.WriteLine($"Capital:{country.Capital}");
+                    //ВВП на душу населения
+                    Console.WriteLine($"GPD:{country.GPD}");
+                }
+                Console.WriteLine();
+            }
+
         }
     }
 }

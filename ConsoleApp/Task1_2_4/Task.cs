@@ -15,32 +15,24 @@ namespace ConsoleApp
             .Aggregate(new KeyValuePair<int, int>(0, 1), (seq, index) => new KeyValuePair<int, int>(seq.Value, seq.Key + seq.Value)).Value;
 
 
-        public static string GroupIntArray(int[] array)
+        public static void GroupIntArray(int[] array)
         {
-            int numberOfGroups = 0;
+         
             var strb = new StringBuilder();
             var query =
                 from number in array
                 group number by number % 2 == 0 into g
                 select g;
 
-            strb.Append("Not Even numbers:");
             foreach (var group in query)
             {
+                Console.WriteLine(group.Key);
                 foreach (var number in group)
                 {
-                    strb.Append($" {number} ");
+                    Console.WriteLine(number);
                 }
-                 ++numberOfGroups;
-                if (numberOfGroups != 2)
-                {
-                    strb.Append("\n");
-                    strb.Append("Even numbers:");
-                }
-               
             }
-            return strb.ToString();
-
+            
         }
     }
 }

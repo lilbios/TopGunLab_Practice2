@@ -1,0 +1,11 @@
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\bin\Debug\netcoreapp3.1\Task1.exe
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\bin\Debug\netcoreapp3.1\Task1.deps.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\bin\Debug\netcoreapp3.1\Task1.runtimeconfig.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\bin\Debug\netcoreapp3.1\Task1.runtimeconfig.dev.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\bin\Debug\netcoreapp3.1\Task1.dll
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\bin\Debug\netcoreapp3.1\Task1.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\obj\Debug\netcoreapp3.1\Task1.csprojAssemblyReference.cache
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\obj\Debug\netcoreapp3.1\Task1.AssemblyInfoInputs.cache
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\obj\Debug\netcoreapp3.1\Task1.AssemblyInfo.cs
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\obj\Debug\netcoreapp3.1\Task1.dll
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task1\obj\Debug\netcoreapp3.1\Task1.pdb

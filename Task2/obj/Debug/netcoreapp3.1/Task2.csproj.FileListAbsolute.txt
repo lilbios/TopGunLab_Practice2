@@ -1,0 +1,11 @@
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\bin\Debug\netcoreapp3.1\Task2.exe
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\bin\Debug\netcoreapp3.1\Task2.deps.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\bin\Debug\netcoreapp3.1\Task2.runtimeconfig.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\bin\Debug\netcoreapp3.1\Task2.runtimeconfig.dev.json
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\bin\Debug\netcoreapp3.1\Task2.dll
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\bin\Debug\netcoreapp3.1\Task2.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\obj\Debug\netcoreapp3.1\Task2.csprojAssemblyReference.cache
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\obj\Debug\netcoreapp3.1\Task2.AssemblyInfoInputs.cache
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\obj\Debug\netcoreapp3.1\Task2.AssemblyInfo.cs
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\obj\Debug\netcoreapp3.1\Task2.dll
+D:\TopGunLab\Practices\TopGunLab_Practice2\Task2\obj\Debug\netcoreapp3.1\Task2.pdb

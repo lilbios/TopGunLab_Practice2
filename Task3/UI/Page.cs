@@ -17,6 +17,7 @@ namespace Task3.UI
         }
         public void Click(IEnumerable<Country> countries) {
 
+            Console.Clear();
             dynamic grouped = GroupHandler(countries);
             switch (Title)
             {
@@ -33,7 +34,7 @@ namespace Task3.UI
                         Console.WriteLine();
                     }
                     break;
-                case "Geographic Pole":
+                case "Continent":
                     foreach (var item in grouped)
                     {
                         Console.WriteLine($" *{item.Prop}* ");
@@ -49,6 +50,31 @@ namespace Task3.UI
 
                         }
                         Console.WriteLine();
+                    }
+                    break;
+
+                case "Geographic Pole":
+                    foreach (var item in grouped)
+                    {
+                        Console.WriteLine($" ~{item.Prop}~ ");
+                        foreach (var country in item.Countries)
+                        {
+                            Console.WriteLine($"Сountry:{country.Name}");
+                            Console.WriteLine($"Population destination:{country.PopulationDestiny}");
+                        }
+                    }
+                    break;
+                case "All properties":
+                    foreach (var item in grouped)
+                    {
+                        Console.WriteLine($" ${item.Prop}$ ");
+                        foreach (var country in item.Countries)
+                        {
+                            Console.WriteLine($"Сountry: {country.Name}");
+                            Console.WriteLine($"Capital: {country.Capital}");
+                            Console.WriteLine($"Population: {country.Population} bil.");
+                            Console.WriteLine($"Area: {country.Area} km^2");
+                        }
                     }
                     break;
 

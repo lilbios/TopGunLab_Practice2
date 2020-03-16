@@ -20,6 +20,11 @@ namespace Task3
 
 
             groupDelegate = new GroupDelegate(CountryGrouper.GroupByContinent);
+            page = new Page("Continent", groupDelegate);
+            menu.AddPage(page);
+
+
+            groupDelegate = new GroupDelegate(CountryGrouper.GroupByGeographicPole);
             page = new Page("Geographic Pole", groupDelegate);
             menu.AddPage(page);
 

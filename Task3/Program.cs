@@ -1,6 +1,8 @@
 ﻿using ConsoleApp;
 using ConsoleApp.Task3;
 using System;
+using System.Collections.Generic;
+using Task3.UI;
 
 namespace Task3
 {
@@ -8,32 +10,28 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            var countries = new Initializer().Countries;
-            dynamic grouped = CountryGrouper.GroupByValuta(countries);
-            foreach (var item in grouped)
-            {
-                Console.WriteLine($"Sign of sort: {item.Prop}");
-                Console.WriteLine($"Countries: {item.Count}");
-                foreach (var country in item.Countries)
-                {
-                    Console.WriteLine(country);
-                }
-                Console.WriteLine();
-            }
-            grouped = CountryGrouper.GroupByContinent(countries);
-            foreach (var item in grouped)
-            {
-                Console.WriteLine($"Sign of sort: {item.Prop}");
-                Console.WriteLine($"Countries: {item.Count}");
-                foreach (var country in item.Countries)
-                {
-                    Console.WriteLine($"Сountry:{country.Name}");
-                    Console.WriteLine($"Capital:{country.Capital}");
-                    //ВВП на душу населения
-                    Console.WriteLine($"GPD:{country.GPD}");
-                }
-                Console.WriteLine();
-            }
+            var menu = new Menu();
+
+            var groupDelegate = new GroupDelegate(CountryGrouper.GroupByValuta);
+            var page = new Page("Valuta", groupDelegate);
+
+            menu.AddPage(page);
+
+
+
+            groupDelegate = new GroupDelegate(CountryGrouper.GroupByContinent);
+            page = new Page("Geographic Pole", groupDelegate);
+            menu.AddPage(page);
+
+            groupDelegate = new GroupDelegate(CountryGrouper.GroupByAllProperty);
+            page = new Page("All properties", groupDelegate);
+            menu.AddPage(page);
+
+            menu.DrawMenu();
+
+
+
+
 
         }
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp
 {
-    public enum GeograhicPole
+    public enum GeographicPole
     {
         WEST,
         SOUTH,
